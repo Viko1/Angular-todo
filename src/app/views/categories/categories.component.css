@@ -1,0 +1,33 @@
+.pointer {
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+
+    .sidebar {
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    right: 0;
+    left: auto;
+    z-index: 1032;
+    visibility: visible;
+    background-color: #9A9A9A;
+    overflow-y: visible;
+    border-top: none;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0;
+    -ms-transform: translate3d(260px, 0, 0);
+    transform: translate3d(260px, 0, 0);
+  }
+
+    #toggle:checked + .sidebar{
+        transform: none;
+      }
+}
+
